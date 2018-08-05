@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+.title{
+    color: white;
+    background-color: #00979D;
+    height: 50px;
+}
+.title h1 {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.logo{
+    margin: auto;
+    max-width:100%;
+    height:auto;
+    width: 60%;
+}
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 10px 2px #888888;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    
+}
+
+.active, .collapsible:hover {
+    background-color: whitesmoke;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    
+    
+}
+
+.collapsible:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; 
+    color: white;
+}
+
+.img{
+    margin: auto;
+    max-width:100%;
+    height:auto;
+    width: 60%;
+}
+@media only screen and (max-width:500px) {
+ .content {
+      width: 100%;
+      font-size:5vw;
+  }
+.content table
+    {
+        width: 100%;
+    }
+}
+table{
+    padding: 5px;
+    width: 25%;
+    text-align: left;
+}
